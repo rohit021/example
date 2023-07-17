@@ -8,7 +8,7 @@ exports.createComment = async (req, res) => {
     try{
         //fetch data from req body 
         const {post, user, body} = req.body;
-        //create a comment object
+        //create a comment object  
         const comment = new Comment({
             post,user,body
         });
