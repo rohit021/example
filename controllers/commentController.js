@@ -8,7 +8,7 @@ exports.createComment = async (req, res) => {
     try{
         //fetch data from req body 
         const {post, user, body} = req.body;
-        //create a comment object
+        //create a comment object  
         const comment = new Comment({
             post,user,body
         });
@@ -24,7 +24,7 @@ exports.createComment = async (req, res) => {
         res.json({
             post: udpatedPost,
         });
-
+        // this is my second branch
     }
     catch(error) {
         return res.status(500).json({
