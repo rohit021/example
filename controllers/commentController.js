@@ -24,7 +24,7 @@ exports.createComment = async (req, res) => {
         res.json({
             post: udpatedPost,
         });
-        // this is my second branch
+        // this is my second branch and added just now
     }
     catch(error) {
         return res.status(500).json({
